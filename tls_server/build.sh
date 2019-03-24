@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --no-cache -t xuqin:goaction .
+docker build --no-cache -t xuqin-goserver .
