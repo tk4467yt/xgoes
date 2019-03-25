@@ -11,7 +11,7 @@ import (
 
 func main() {
     //注意这里要使用证书中包含的主机名称
-    conn, err := tls.Dial("tcp", "127.0.0.1:8888", &tls.Config{InsecureSkipVerify: true})
+    conn, err := tls.Dial("tcp", "tls_server:8888", &tls.Config{InsecureSkipVerify: true})
     if err != nil {
         log.Fatalln(err.Error())
     }
